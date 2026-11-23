@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Meal Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <h1>🍽️ European Meal Finder</h1>
+
+    <div class="controls">
+      <label class="sr-only" for="area-select">Choose cuisine</label>
+      <select id="area-select">
+        <option>Italian</option>
+        <option>French</option>
+        <option>Greek</option>
+        <option>Spanish</option>
+        <option>British</option>
+        <option>Polish</option>
+        <option>Portuguese</option>
+        <option>Dutch</option>
+        <option>Irish</option>
+        <option>Croatian</option>
+      </select>
+
+      <label class="sr-only" for="search-input">Search meals</label>
+      <input id="search-input" type="search" placeholder="Search meals..." autocomplete="off">
+
+      <button id="favorites-button" type="button">❤️ Favorites (0)</button>
+    </div>
+
+    <h2 id="section-title">Italian Meals</h2>
+    <p id="message" aria-live="polite" hidden></p>
+    <div class="grid" id="meal-grid"></div>
+  </main>
+</body>
+</html>
